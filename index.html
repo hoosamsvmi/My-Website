@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Hossam Samy is a Computer Science student and front-end developer creating modern, responsive, and user-friendly web experiences." />
+    <meta name="keywords"
+        content="Hossam Samy, hoosamsvmi, front-end developer, web developer, portfolio, Computer Science student, responsive design" />
+    <meta property="og:title" content="Hossam Samy | Frontend Developer" />
+    <meta property="og:description"
+        content="Computer Science student and frontend developer building modern, responsive web experiences." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./images/profile-picture.webp" />
+    <link rel="icon" type="image/webp" href="./images/favicon.webp" />
+    <title>hoosamsvmi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div class="page-shell">
+        <div class="ambient ambient-one"></div>
+        <div class="ambient ambient-two"></div>
+        <div class="ambient ambient-three"></div>
+        <div class="grid-overlay" aria-hidden="true"></div>
+        <div class="cursor-glow" aria-hidden="true"></div>
+
+        <div class="preloader" id="preloader" aria-live="polite">
+            <div class="preloader__content">
+                <span class="preloader__name">hoosamsvmi</span>
+                <span class="preloader__line"></span>
+            </div>
+        </div>
+
+        <header class="site-header">
+            <nav class="nav container" aria-label="Main navigation">
+                <a class="nav__brand" href="#home" aria-label="Hossam Samy home">hoosamsvmi</a>
+
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu"
+                    aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="nav-menu" id="nav-menu">
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#education" class="nav-link">Education</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero section" id="home">
+                <div class="container hero__grid">
+                    <div class="hero__content reveal reveal-up">
+                        <p class="eyebrow">Hello, I’m</p>
+                        <h1>
+                            <span class="heading-line">Hossam Samy</span>
+                        </h1>
+                        <p class="hero__subheading">Computer Science Student | Frontend Developer | Tech Explorer</p>
+                        <p class="hero__description">
+                            I build modern, responsive, and user-friendly web experiences with clean design and
+                            interactive details.
+                        </p>
+                        <div class="hero__identity">
+                            <span class="identity-badge">hoosamsvmi</span>
+                        </div>
+                        <div class="hero__actions">
+                            <a class="btn btn--primary" href="#projects">View My Projects</a>
+                            <a class="btn btn--ghost" href="#contact">Contact Me</a>
+                        </div>
+                        <div class="scroll-indicator" aria-label="Scroll down">
+                            <span>Scroll</span>
+                            <span class="scroll-indicator__line"></span>
+                        </div>
+                    </div>
+
+                    <div class="hero__visual reveal reveal-left">
+                        <div class="portrait-frame">
+                            <div class="ring ring--one"></div>
+                            <div class="ring ring--two"></div>
+                            <div class="ring ring--three"></div>
+                            <div class="orb orb--one"></div>
+                            <div class="orb orb--two"></div>
+                            <img src="./images/profile-picture.webp" alt="Portrait of Hossam Samy" class="profile-image"
+                                width="640" height="640" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section about" id="about">
+                <div class="container">
+                    <div class="section-heading reveal reveal-up">
+                        <p class="eyebrow">About</p>
+                        <h2>Creative builder with a passion for thoughtful design.</h2>
+                    </div>
+
+                    <div class="about__layout">
+                        <div class="about__media reveal reveal-left">
+                            <div class="about-card">
+                                <img src="./images/profile-picture-2.webp" alt="Hossam Samy profile portrait"
+                                    loading="lazy" width="620" height="620" />
+                            </div>
+                        </div>
+
+                        <div class="about__content reveal reveal-right">
+                            <p>
+                                Hossam Samy is a Computer Science and Artificial Intelligence student at Beni-Suef
+                                University with a passion for web development. He enjoys building modern and responsive
+                                websites using HTML, CSS, and JavaScript. He is currently improving his skills and aims
+                                to become a professional front-end developer who creates clean, user-friendly web
+                                experiences.
+                            </p>
+
+                            <div class="info-grid">
+                                <article class="info-card interactive-card glass-card reveal">
+                                    <div class="info-card__image">
+                                        <img src="./images/Computer Science.webp" alt="Computer Science and AI" loading="lazy" width="64" height="64" />
+                                    </div>
+                                    <h3>Computer Science</h3>
+                                    <p>Foundations in algorithms, C++, and problem-solving</p>
+                                </article>
+                                <article class="info-card interactive-card glass-card reveal">
+                                    <div class="info-card__image">
+                                        <img src="./images/Frontend Development.webp" alt="Frontend Development" loading="lazy" width="64" height="64" />
+                                    </div>
+                                    <h3>Frontend Development</h3>
+                                    <p>HTML, CSS, JavaScript, and modern web interfaces</p>
+                                </article>
+                                <article class="info-card interactive-card glass-card reveal">
+                                    <div class="info-card__image">
+                                        <img src="./images/Responsive Design.webp" alt="Responsive Design" loading="lazy" width="64" height="64" />
+                                    </div>
+                                    <h3>Responsive Design</h3>
+                                    <p>Mobile-first layouts and adaptive interfaces</p>
+                                </article>
+                                <article class="info-card interactive-card glass-card reveal">
+                                    <div class="info-card__image">
+                                        <img src="./images/Continuous Learning.webp" alt="Continuous Learning" loading="lazy" width="64" height="64" />
+                                    </div>
+                                    <h3>Continuous Learning</h3>
+                                    <p>Full-stack development through Creativa FullStack Course</p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section skills" id="skills">
+                <div class="container">
+                    <div class="section-heading reveal reveal-up">
+                        <p class="eyebrow">Skills</p>
+                        <h2>Tools and strengths I’m shaping every day.</h2>
+                    </div>
+
+                    <div class="skills-grid">
+                        <article class="skill-card glass-card reveal reveal-up tilt-card" data-skill="HTML"
+                            data-percentage="95">
+                            <div class="skill-card__header">
+                                <div class="skill-card__icon">
+                                    <img src="./images/HTML.webp" alt="HTML logo" loading="lazy" width="48"
+                                        height="48" />
+                                </div>
+                                <div class="skill-card__meta">
+                                    <h3>HTML</h3>
+                                    <div class="skill-card__stat">
+                                        <span class="skill-value">0%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-progress"><span class="skill-progress-bar"></span></div>
+                        </article>
+
+                        <article class="skill-card glass-card reveal reveal-up tilt-card" data-skill="CSS"
+                            data-percentage="90">
+                            <div class="skill-card__header">
+                                <div class="skill-card__icon">
+                                    <img src="./images/CSS.webp" alt="CSS logo" loading="lazy" width="48" height="48" />
+                                </div>
+                                <div class="skill-card__meta">
+                                    <h3>CSS</h3>
+                                    <div class="skill-card__stat">
+                                        <span class="skill-value">0%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-progress"><span class="skill-progress-bar"></span></div>
+                        </article>
+
+                        <article class="skill-card glass-card reveal reveal-up tilt-card" data-skill="JavaScript"
+                            data-percentage="40">
+                            <div class="skill-card__header">
+                                <div class="skill-card__icon">
+                                    <img src="./images/JS.webp" alt="JavaScript logo" loading="lazy" width="48"
+                                        height="48" />
+                                </div>
+                                <div class="skill-card__meta">
+                                    <h3>JavaScript</h3>
+                                    <div class="skill-card__stat">
+                                        <span class="skill-badge">Beginner</span>
+                                        <span class="skill-value">0%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-progress skill-progress--beginner"><span
+                                    class="skill-progress-bar"></span></div>
+                        </article>
+
+                        <article class="skill-card glass-card reveal reveal-up tilt-card" data-skill="C++"
+                            data-percentage="40">
+                            <div class="skill-card__header">
+                                <div class="skill-card__icon">
+                                    <img src="./images/C++.webp" alt="C++ logo" loading="lazy" width="48" height="48" />
+                                </div>
+                                <div class="skill-card__meta">
+                                    <h3>C++</h3>
+                                    <div class="skill-card__stat">
+                                        <span class="skill-badge">Beginner</span>
+                                        <span class="skill-value">0%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-progress skill-progress--beginner"><span
+                                    class="skill-progress-bar"></span></div>
+                        </article>
+
+                        <article class="skill-card glass-card reveal reveal-up tilt-card" data-skill="Video Editing"
+                            data-percentage="90">
+                            <div class="skill-card__header">
+                                <div class="skill-card__icon">
+                                    <img src="./images/Video-Editing.webp" alt="Video editing icon" loading="lazy"
+                                        width="48" height="48" />
+                                </div>
+                                <div class="skill-card__meta">
+                                    <h3>Video Editing</h3>
+                                    <div class="skill-card__stat">
+                                        <span class="skill-value">0%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-progress"><span class="skill-progress-bar"></span></div>
+                        </article>
+
+                        <article class="skill-card glass-card reveal reveal-up tilt-card" data-skill="Photo Editing"
+                            data-percentage="85">
+                            <div class="skill-card__header">
+                                <div class="skill-card__icon">
+                                    <img src="./images/Photo-Editing.webp" alt="Photo editing icon" loading="lazy"
+                                        width="48" height="48" />
+                                </div>
+                                <div class="skill-card__meta">
+                                    <h3>Photo Editing</h3>
+                                    <div class="skill-card__stat">
+                                        <span class="skill-value">0%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-progress"><span class="skill-progress-bar"></span></div>
+                        </article>
+
+                        <article class="skill-card glass-card reveal reveal-up tilt-card" data-skill="Graphic Design"
+                            data-percentage="55">
+                            <div class="skill-card__header">
+                                <div class="skill-card__icon">
+                                    <img src="./images/Graphic-Design.webp" alt="Graphic design icon" loading="lazy"
+                                        width="48" height="48" />
+                                </div>
+                                <div class="skill-card__meta">
+                                    <h3>Graphic Design</h3>
+                                    <div class="skill-card__stat">
+                                        <span class="skill-badge">Beginner</span>
+                                        <span class="skill-value">0%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-progress skill-progress--beginner"><span
+                                    class="skill-progress-bar"></span></div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section projects" id="projects">
+                <div class="container">
+                    <div class="section-heading reveal reveal-up">
+                        <p class="eyebrow">Projects</p>
+                        <h2>Selected work that balances design and usability.</h2>
+                    </div>
+
+                    <div class="projects-grid">
+                        <article class="project-card glass-card reveal reveal-up tilt-card">
+                            <div class="project-card__image-wrap">
+                                <img src="./images/Bellavita-Restaurant.webp" alt="Bellavita Restaurant website preview"
+                                    loading="lazy" width="900" height="640" />
+                            </div>
+                            <div class="project-card__body">
+                                <h3>Bellavita Restaurant</h3>
+                                <p>“A modern and fully responsive restaurant website featuring an elegant user
+                                    interface, interactive sections, and smooth animations.”</p>
+                                <div class="tech-tags" aria-label="Project technologies">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                </div>
+                                <div class="project-card__actions">
+                                    <a class="btn btn--small btn--primary"
+                                        href="https://hoosamsvmi.github.io/Bellavita-Restaurant/" target="_blank"
+                                        rel="noopener noreferrer">Live Demo</a>
+                                    <a class="btn btn--small btn--ghost"
+                                        href="https://github.com/hoosamsvmi/Bellavita-Restaurant" target="_blank"
+                                        rel="noopener noreferrer">View Code</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card glass-card reveal reveal-up tilt-card">
+                            <div class="project-card__image-wrap">
+                                <img src="./images/Kasa-Cafe.webp" alt="Kasa Cafe website preview" loading="lazy"
+                                    width="900" height="640" />
+                            </div>
+                            <div class="project-card__body">
+                                <h3>Kasa Cafe</h3>
+                                <p>“A responsive café website featuring modern UI design, smooth animations, CSS
+                                    transitions and transforms, and a clean user-friendly experience.”</p>
+                                <div class="tech-tags" aria-label="Project technologies">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                </div>
+                                <div class="project-card__actions">
+                                    <a class="btn btn--small btn--primary"
+                                        href="https://hoosamsvmi.github.io/Kasa-Cafe/" target="_blank"
+                                        rel="noopener noreferrer">Live Demo</a>
+                                    <a class="btn btn--small btn--ghost" href="https://github.com/hoosamsvmi/Kasa-Cafe"
+                                        target="_blank" rel="noopener noreferrer">View Code</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="education" class="education-section">
+  <div class="section-heading reveal">
+    <span class="section-eyebrow">My learning path</span>
+
+    <h2>
+      Education <span>&amp;</span> Growth
+    </h2>
+
+    <p>
+      My continuous journey of learning, practicing, and building better
+      digital experiences.
+    </p>
+  </div>
+
+  <div class="education-timeline">
+
+    <article class="education-card reveal education-card-left">
+      <div class="education-dot"></div>
+
+      <div class="education-card-media">
+        <img
+          src="./images/FCAI.webp"
+          alt="FCAI at Beni-Suef University"
+          loading="lazy"
+        />
+      </div>
+
+      <div class="education-card-content">
+        <span class="education-label">Education</span>
+
+        <h3>Student at FCAI | BSU</h3>
+
+        <p>
+          Studying Computer Science and Artificial Intelligence at
+          Beni-Suef University.
+        </p>
+      </div>
+    </article>
+
+    <article class="education-card reveal education-card-right">
+      <div class="education-dot"></div>
+
+      <div class="education-card-media">
+        <img
+          src="./images/Creativa.webp"
+          alt="Creativa FullStack Course"
+          loading="lazy"
+        />
+      </div>
+
+      <div class="education-card-content">
+        <span class="education-label">Current Learning</span>
+
+        <h3>Creativa FullStack Course</h3>
+
+        <span class="education-status">
+          <span class="status-dot"></span>
+          In Progress
+        </span>
+
+        <p>
+          Improving full-stack web development skills through continuous
+          practice and project-based learning.
+        </p>
+      </div>
+    </article>
+
+  </div>
+            </section>
+
+            <section class="section creative" id="creative">
+                <div class="container">
+                    <div class="section-heading reveal reveal-up">
+                        <p class="eyebrow">Creative Abilities</p>
+                        <h2>Designing visual experiences with both creativity and technical thinking.</h2>
+                    </div>
+
+                    <div class="creative-grid">
+                        <article class="creative-card glass-card reveal reveal-up tilt-card">
+                            <img src="./images/Photo-Editing.webp" alt="Photo editing asset" loading="lazy" width="120"
+                                height="120" />
+                            <h3>Frontend Development</h3>
+                        </article>
+                        <article class="creative-card glass-card reveal reveal-up tilt-card">
+                            <img src="./images/Video-Editing.webp" alt="Video editing asset" loading="lazy" width="120"
+                                height="120" />
+                            <h3>Video Editing</h3>
+                        </article>
+                        <article class="creative-card glass-card reveal reveal-up tilt-card">
+                            <img src="./images/Photo-Editing.webp" alt="Photo editing asset" loading="lazy" width="120"
+                                height="120" />
+                            <h3>Photo Editing</h3>
+                        </article>
+                        <article class="creative-card glass-card reveal reveal-up tilt-card">
+                            <img src="./images/Graphic-Design.webp" alt="Graphic design asset" loading="lazy"
+                                width="120" height="120" />
+                            <h3>Graphic Design</h3>
+                        </article>
+                        <article class="creative-card glass-card reveal reveal-up tilt-card">
+                            <img src="./images/HTML.webp" alt="Frontend development asset" loading="lazy" width="120"
+                                height="120" />
+                            <h3>Building Visual Web Experiences</h3>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section contact" id="contact">
+                <div class="container contact__grid">
+                    <div class="contact__info reveal reveal-left">
+                        <div class="contact-card glass-card">
+                            <p class="eyebrow">Contact</p>
+                            <h2>Let’s build something visually memorable.</h2>
+                            <p>
+                                I enjoy creating elegant, user-friendly experiences and am always open to new creative
+                                opportunities.
+                            </p>
+
+                            <div class="contact-email">
+                                <div class="contact-email__icon">
+                                    <img src="./images/Email.webp" alt="Email icon" width="28" height="28"
+                                        loading="lazy" />
+                                </div>
+                                <a href="mailto:hossamsamyabdelaal@gmail.com" class="copy-email"
+                                    id="emailLink">hossamsamyabdelaal@gmail.com</a>
+                            </div>
+
+                            <div class="contact-actions">
+                                <button class="btn btn--small btn--primary" id="copyEmailBtn" type="button">Copy
+                                    Email</button>
+                                <a class="btn btn--small btn--ghost" href="mailto:hossamsamyabdelaal@gmail.com">Open in
+                                    Email App</a>
+                            </div>
+
+                            <div class="social-links" aria-label="Social media links">
+                                <a href="https://www.instagram.com/hoosamsvmi/" target="_blank"
+                                    rel="noopener noreferrer" aria-label="Instagram">
+                                    <img src="./images/instagram.webp" alt="Instagram logo" loading="lazy" width="28"
+                                        height="28" />
+                                </a>
+                                <a href="https://wa.me/+201065023985" target="_blank" rel="noopener noreferrer"
+                                    aria-label="WhatsApp">
+                                    <img src="./images/whatsapp.webp" alt="WhatsApp logo" loading="lazy" width="28"
+                                        height="28" />
+                                </a>
+                                <a href="https://github.com/hoosamsvmi" target="_blank" rel="noopener noreferrer"
+                                    aria-label="GitHub">
+                                    <img src="./images/github.webp" alt="GitHub logo" loading="lazy" width="28"
+                                        height="28" />
+                                </a>
+                                <a href="https://www.linkedin.com/in/hoosamsvmi/" target="_blank"
+                                    rel="noopener noreferrer" aria-label="LinkedIn">
+                                    <img src="./images/linkedin.webp" alt="LinkedIn logo" loading="lazy" width="28"
+                                        height="28" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact__form reveal reveal-right">
+                        <form id="contactForm" novalidate>
+                            <div class="field-group">
+                                <label for="name">Name</label>
+                                <input id="name" name="name" type="text" placeholder="Your name" required />
+                                <small class="error-message" data-error-for="name"></small>
+                            </div>
+
+                            <div class="field-group">
+                                <label for="email">Email</label>
+                                <input id="email" name="email" type="email" placeholder="your@email.com" required />
+                                <small class="error-message" data-error-for="email"></small>
+                            </div>
+
+                            <div class="field-group">
+                                <label for="subject">Subject</label>
+                                <input id="subject" name="subject" type="text" placeholder="Project inquiry" required />
+                                <small class="error-message" data-error-for="subject"></small>
+                            </div>
+
+                            <div class="field-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Tell me about your idea..."
+                                    required></textarea>
+                                <small class="error-message" data-error-for="message"></small>
+                            </div>
+
+                            <button class="btn btn--primary btn--full" type="submit" id="submitBtn">Send
+                                Message</button>
+                            <div
+                              id="form-success-message"
+                              class="form-success-message"
+                              role="status"
+                              aria-live="polite"
+                              hidden
+                            >
+                              <span class="success-icon">✓</span>
+                              <div>
+                                <strong>Message sent successfully!</strong>
+                                <p>Thank you for contacting me. I'll get back to you soon.</p>
+                              </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container footer__inner">
+                <p>© 2026 <span class="footer-brand">hoosamsvmi</span>. All rights reserved. Built with passion and code.</p>
+                <button class="scroll-top" type="button" aria-label="Scroll to top">↑</button>
+            </div>
+        </footer>
+    </div>
+
+    <div id="toast" class="toast" aria-live="polite" aria-atomic="true"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

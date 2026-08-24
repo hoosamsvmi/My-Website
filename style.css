@@ -1299,6 +1299,18 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   text-align: center;
 }
 
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer-brand .brand-logo {
+  justify-content: center;
+}
+
 .footer-tagline {
   font-family: var(--font-mono);
   font-size: 0.85rem;
@@ -1396,6 +1408,15 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
     flex-direction: row;
     justify-content: space-between;
     text-align: left;
+  }
+
+  .footer-brand {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .footer-brand .brand-logo {
+    justify-content: flex-start;
   }
 }
 

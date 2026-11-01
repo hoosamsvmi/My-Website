@@ -846,6 +846,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 
 .skill-item {
   width: 100%;
+  margin-bottom: 10px;
 }
 
 .skill-info {

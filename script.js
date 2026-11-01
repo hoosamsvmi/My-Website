@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             window.scrollTo({
               top: offsetPosition,
-              behavior: 'smooth'
+              behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'
             });
           }
         }
@@ -67,12 +67,16 @@ document.addEventListener('DOMContentLoaded', () => {
   // ------------------------------------------------------------------------
   // 3. Header Glassmorphic Scroll Effect & Active Section Tracking
   // ------------------------------------------------------------------------
+  let headerScrollFrame = 0;
   const handleHeaderScroll = () => {
-    if (window.scrollY > 40) {
-      navbar.classList.add('scrolled');
-    } else {
-      navbar.classList.remove('scrolled');
-    }
+    if (headerScrollFrame) return;
+
+    headerScrollFrame = window.requestAnimationFrame(() => {
+      headerScrollFrame = 0;
+      if (!navbar) return;
+
+      navbar.classList.toggle('scrolled', window.scrollY > 40);
+    });
   };
 
   window.addEventListener('scroll', handleHeaderScroll, { passive: true });
@@ -141,10 +145,10 @@ document.addEventListener('DOMContentLoaded', () => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         const skillItem = entry.target;
-        const level = skillItem.getAttribute('data-level');
+        const level = Number(skillItem.getAttribute('data-level'));
         const progressBar = skillItem.querySelector('.progress-bar-fill');
-        if (progressBar && level) {
-          progressBar.style.width = `${level}%`;
+        if (progressBar && Number.isFinite(level)) {
+          progressBar.style.setProperty('--progress', String(Math.min(100, Math.max(0, level)) / 100));
         }
         observer.unobserve(skillItem);
       }
